@@ -22,7 +22,7 @@ app.get("/api/page", async (req, res) => {
       url.port
     ) {
       return res.status(403).json({
-        error: "Only https://example.com is allowed."
+        error: "Only https://httpbin.org is allowed."
       });
     }
 
