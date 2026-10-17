@@ -18,7 +18,7 @@ app.get("/api/page", async (req, res) => {
 
     if (
       url.protocol !== "https:" ||
-      url.hostname !== "example.com" ||
+      url.hostname !== "httpbin.org"
       url.port
     ) {
       return res.status(403).json({
